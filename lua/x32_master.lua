@@ -1,11 +1,11 @@
 -- CONFIGURATION ---------------------------------------------------------------
 
-local modem_side = "back"
+local MODEM_SIDE = "back"
 
-local id_crafter = 74
-local id_leftovers = 75
-local id_dummy = 78
-local id_intermediate = 87
+local ID_CRAFTER = 74
+local ID_LEFTOVERS = 75
+local ID_DUMMY = 78
+local ID_INTERMEDIATE = 87
 
 -- INITIALIZATION --------------------------------------------------------------
 
@@ -34,7 +34,12 @@ local ingredients_module_id_computer_ids = {
 	{ 88, 89, 90, 91, }, -- 67,
 }
 
-rednet.open(modem_side)
+-- TODO: Calculate the maximum amount of time needed, instead of hardcoding.
+local CRAFT_LAST_RECIPE_STACKS_SECONDS = 1.0
+-- TODO: Calculate the maximum amount of time needed, instead of hardcoding.
+local CRAFT_LAST_INGREDIENT_STACKS_SECONDS = 1.0
+
+rednet.open(MODEM_SIDE)
 
 -- MASTER ----------------------------------------------------------------------
 
@@ -70,14 +75,12 @@ function master:main()
 	crafter:clear()
 	crafter:unset_dummy()
 	crafter:enable_crafting()
-	-- Sleep for long enough to craft all recipe stacks.
-	sleep(0.8)
+	sleep(CRAFT_LAST_RECIPE_STACKS_SECONDS)
 	for i = 1, 10 do
 		ingredients:send("oak_planks", 8)
 		sleep(0.4)
 	end
-	-- Sleep for long enough to craft the last ingredient stacks.
-	sleep(0.8)
+	sleep(CRAFT_LAST_INGREDIENT_STACKS_SECONDS)
 	crafter:disable_crafting()
 	crafter:clear()
 	crafter:clear()
@@ -94,60 +97,60 @@ end
 -- CRAFTER ---------------------------------------------------------------------
 
 function crafter:disable_crafting()
-	run(id_crafter, "disable_crafting")
+	run(ID_CRAFTER, "disable_crafting")
 	sleep(0.05)
 end
 function crafter:enable_crafting()
-	run(id_crafter, "enable_crafting")
+	run(ID_CRAFTER, "enable_crafting")
 	sleep(0.05)
 end
 function crafter:clear()
-	run(id_crafter, "clear")
+	run(ID_CRAFTER, "clear")
 	sleep(0.4)
 end
 function crafter:set_dummy()
-	run(id_crafter, "set_dummy")
+	run(ID_CRAFTER, "set_dummy")
 	sleep(0.4)
 end
 function crafter:unset_dummy()
-	run(id_crafter, "unset_dummy")
+	run(ID_CRAFTER, "unset_dummy")
 	sleep(0.4)
 end
 
 -- LEFTOVERS -------------------------------------------------------------------
 
 function leftovers:store_stack()
-	run(id_leftovers, "store_stack")
-	sleep(0.4)
+	run(ID_LEFTOVERS, "store_stack")
+	SLEEP(0.4)
 end
 function leftovers:store_single()
-	run(id_leftovers, "store_single")
-	sleep(0.4)
+	run(ID_LEFTOVERS, "store_single")
+	SLEEP(0.4)
 end
 function leftovers:recycle()
-	run(id_leftovers, "recycle")
-	sleep(0.4)
+	run(ID_LEFTOVERS, "recycle")
+	SLEEP(0.4)
 end
 
 -- DUMMY -----------------------------------------------------------------------
 
 function dummy:send()
-	run(id_dummy, "send")
+	run(ID_DUMMY, "send")
 	sleep(0.4)
 end
 
 -- INTERMEDIATE ----------------------------------------------------------------
 
 function intermediate:take(color)
-	run_arg(id_intermediate, "take", color)
+	run_arg(ID_INTERMEDIATE, "take", color)
 	sleep(0.4)
 end
 function intermediate:send_as_recipe(color)
-	run_arg(id_intermediate, "send_as_recipe", color)
+	run_arg(ID_INTERMEDIATE, "send_as_recipe", color)
 	sleep(0.4)
 end
 function intermediate:send_as_ingredient(color)
-	run_arg(id_intermediate, "send_as_ingredient", color)
+	run_arg(ID_INTERMEDIATE, "send_as_ingredient", color)
 	sleep(0.4)
 end
 
