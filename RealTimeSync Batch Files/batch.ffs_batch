@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="BATCH" XmlFormat="17">
+    <Compare>
+        <Variant>TimeAndSize</Variant>
+        <Symlinks>Exclude</Symlinks>
+        <IgnoreTimeShift/>
+    </Compare>
+    <Synchronize>
+        <Variant>TwoWay</Variant>
+        <DetectMovedFiles>false</DetectMovedFiles>
+        <DeletionPolicy>RecycleBin</DeletionPolicy>
+        <VersioningFolder Style="Replace"/>
+    </Synchronize>
+    <Filter>
+        <Include>
+            <Item>*</Item>
+        </Include>
+        <Exclude>
+            <Item>\System Volume Information\</Item>
+            <Item>\$Recycle.Bin\</Item>
+            <Item>\RECYCLE?\</Item>
+            <Item>*\thumbs.db</Item>
+        </Exclude>
+        <TimeSpan Type="None">0</TimeSpan>
+        <SizeMin Unit="None">0</SizeMin>
+        <SizeMax Unit="None">0</SizeMax>
+    </Filter>
+    <FolderPairs>
+        <Pair>
+            <Left>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\67</Left>
+            <Right>I:\Programming\x32_crafter\lua</Right>
+            <Filter>
+                <Include>
+                    <Item>x32_ingredients.lua</Item>
+                </Include>
+                <Exclude/>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\74</Left>
+            <Right>I:\Programming\x32_crafter\lua</Right>
+            <Filter>
+                <Include>
+                    <Item>x32_crafter.lua</Item>
+                </Include>
+                <Exclude/>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\75</Left>
+            <Right>I:\Programming\x32_crafter\lua</Right>
+            <Filter>
+                <Include>
+                    <Item>x32_leftovers.lua</Item>
+                </Include>
+                <Exclude/>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\76</Left>
+            <Right>I:\Programming\x32_crafter\lua</Right>
+            <Filter>
+                <Include>
+                    <Item>x32_master.lua</Item>
+                </Include>
+                <Exclude/>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\78</Left>
+            <Right>I:\Programming\x32_crafter\lua</Right>
+            <Filter>
+                <Include>
+                    <Item>x32_dummy.lua</Item>
+                </Include>
+                <Exclude/>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\79</Left>
+            <Right>I:\Programming\x32_crafter\lua</Right>
+            <Filter>
+                <Include>
+                    <Item>x32_recipe.lua</Item>
+                </Include>
+                <Exclude/>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\87</Left>
+            <Right>I:\Programming\x32_crafter\lua</Right>
+            <Filter>
+                <Include>
+                    <Item>x32_intermediate.lua</Item>
+                </Include>
+                <Exclude/>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\88</Left>
+            <Right>I:\Programming\x32_crafter\lua</Right>
+            <Filter>
+                <Include>
+                    <Item>x32_ingredients.lua</Item>
+                </Include>
+                <Exclude/>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\89</Left>
+            <Right>I:\Programming\x32_crafter\lua</Right>
+            <Filter>
+                <Include>
+                    <Item>x32_ingredients.lua</Item>
+                </Include>
+                <Exclude/>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\90</Left>
+            <Right>I:\Programming\x32_crafter\lua</Right>
+            <Filter>
+                <Include>
+                    <Item>x32_ingredients.lua</Item>
+                </Include>
+                <Exclude/>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\91</Left>
+            <Right>I:\Programming\x32_crafter\lua</Right>
+            <Filter>
+                <Include>
+                    <Item>x32_ingredients.lua</Item>
+                </Include>
+                <Exclude/>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+    </FolderPairs>
+    <Errors Ignore="false" Retry="0" Delay="5"/>
+    <PostSyncCommand Condition="Completion"/>
+    <LogFolder/>
+    <EmailNotification Condition="Always"/>
+    <Batch>
+        <ProgressDialog Minimized="true" AutoClose="true"/>
+        <ErrorDialog>Show</ErrorDialog>
+        <PostSyncAction>None</PostSyncAction>
+    </Batch>
+</FreeFileSync>
