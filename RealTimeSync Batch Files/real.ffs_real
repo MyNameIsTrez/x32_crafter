@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FreeFileSync XmlType="REAL" XmlFormat="2">
     <Directories>
-        <Item>I:\Programming\Cortex-Command-Mods\bone.rte</Item>
-        <Item>I:\Programming\Cortex-Command-Community-Project-Data\bone.rte</Item>
-        <Item>I:\Programming\Cortex-Command-Community-Project-Data\modmod.rte</Item>
-        <Item>I:\Programming\Cortex-Command-Community-Project-Data\utils.rte</Item>
-        <Item>I:\Programming\Cortex-Command-Mods\modmod.rte</Item>
-        <Item>I:\Programming\Cortex-Command-Mods\utils.rte</Item>
+        <Item>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\67</Item>
+        <Item>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\74</Item>
+        <Item>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\75</Item>
+        <Item>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\76</Item>
+        <Item>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\78</Item>
+        <Item>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\79</Item>
+        <Item>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\87</Item>
+        <Item>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\88</Item>
+        <Item>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\89</Item>
+        <Item>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\90</Item>
+        <Item>C:\Users\welfj\AppData\Roaming\.technic\modpacks\tekkit\saves\Random Projects\computer\91</Item>
+        <Item>I:\Programming\x32_crafter\lua</Item>
     </Directories>
     <Delay>1</Delay>
-    <Commandline>"C:\Program Files\FreeFileSync\FreeFileSync.exe" "I:\Programming\Cortex-Command-Mods\RealTimeSync Batch Files\mods.ffs_batch"</Commandline>
+    <Commandline>"C:\Program Files\FreeFileSync\FreeFileSync.exe" "I:\Programming\x32_crafter\RealTimeSync Batch Files\batch.ffs_batch"</Commandline>
 </FreeFileSync>

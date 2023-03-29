@@ -121,15 +121,15 @@ end
 
 function leftovers:store_stack()
 	run(ID_LEFTOVERS, "store_stack")
-	SLEEP(0.4)
+	sleep(0.4)
 end
 function leftovers:store_single()
 	run(ID_LEFTOVERS, "store_single")
-	SLEEP(0.4)
+	sleep(0.4)
 end
 function leftovers:recycle()
 	run(ID_LEFTOVERS, "recycle")
-	SLEEP(0.4)
+	sleep(0.4)
 end
 
 -- DUMMY -----------------------------------------------------------------------
