@@ -6,6 +6,8 @@ local id_master = 76
 
 -- INITIALIZATION --------------------------------------------------------------
 
+local TELEPORTER_MINIMUM_ON_TIME = 0.1
+
 rednet.open(modem_side)
 
 -- CODE ------------------------------------------------------------------------
@@ -30,7 +32,7 @@ end
 
 function pulse_color(side, color)
 	rs.setBundledOutput(side, color)
-	sleep(0.05)
+	sleep(TELEPORTER_MINIMUM_ON_TIME)
 	rs.setBundledOutput(side, 0)
 end
 

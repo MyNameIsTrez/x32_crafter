@@ -35,9 +35,9 @@ local ingredients_module_id_computer_ids = {
 }
 
 -- TODO: Calculate the maximum amount of time needed, instead of hardcoding.
-local CRAFT_LAST_RECIPE_STACKS_SECONDS = 1.0
+local CRAFT_LAST_RECIPE_STACKS_TIME = 1.0
 -- TODO: Calculate the maximum amount of time needed, instead of hardcoding.
-local CRAFT_LAST_INGREDIENT_STACKS_SECONDS = 1.0
+local CRAFT_LAST_INGREDIENT_STACKS_TIME = 1.0
 
 rednet.open(MODEM_SIDE)
 
@@ -47,16 +47,14 @@ function master:main()
 	-- crafter:disable_crafting()
 	-- crafter:enable_crafting()
 	-- crafter:clear()
-	-- crafter:set_dummy()
-	-- crafter:unset_dummy()
+	-- crafter:set_dummy_filtering()
+	-- crafter:unset_dummy_filtering()
 	-- leftovers:store_stack()
 	-- leftovers:store_single()
 	-- leftovers:recycle()
 	-- dummy:send()
 	-- intermediate:take(1)
 	-- intermediate:send_as_recipe(1)
-	-- intermediate:send_as_recipe(1)
-	-- intermediate:send_as_ingredient(1)
 	-- intermediate:send_as_ingredient(1)
 	-- recipe:send("oak_planks")
 	-- ingredients:send("oak_planks", 4)
@@ -66,21 +64,22 @@ function master:main()
 	recipe:send("oak_planks")
 	recipe:send("oak_planks")
 	recipe:send("oak_planks")
+	-- sleep(0.3)
 	dummy:send()
 	recipe:send("oak_planks")
 	recipe:send("oak_planks")
 	recipe:send("oak_planks")
 	recipe:send("oak_planks")
-	crafter:set_dummy()
+	crafter:set_dummy_filtering()
 	crafter:clear()
-	crafter:unset_dummy()
+	crafter:unset_dummy_filtering()
 	crafter:enable_crafting()
-	sleep(CRAFT_LAST_RECIPE_STACKS_SECONDS)
+	sleep(CRAFT_LAST_RECIPE_STACKS_TIME)
 	for i = 1, 10 do
 		ingredients:send("oak_planks", 8)
 		sleep(0.4)
 	end
-	sleep(CRAFT_LAST_INGREDIENT_STACKS_SECONDS)
+	sleep(CRAFT_LAST_INGREDIENT_STACKS_TIME)
 	crafter:disable_crafting()
 	crafter:clear()
 	crafter:clear()
@@ -108,12 +107,12 @@ function crafter:clear()
 	run(ID_CRAFTER, "clear")
 	sleep(0.4)
 end
-function crafter:set_dummy()
-	run(ID_CRAFTER, "set_dummy")
+function crafter:set_dummy_filtering()
+	run(ID_CRAFTER, "set_dummy_filtering")
 	sleep(0.4)
 end
-function crafter:unset_dummy()
-	run(ID_CRAFTER, "unset_dummy")
+function crafter:unset_dummy_filtering()
+	run(ID_CRAFTER, "unset_dummy_filtering")
 	sleep(0.4)
 end
 
@@ -161,6 +160,7 @@ function recipe:send(item_name)
 	local color = recipe_item_name_colors[item_name]
 	run_arg(id, "send", color)
 	sleep(0.4)
+	-- sleep(1)
 end
 
 -- INGREDIENTS -----------------------------------------------------------------

@@ -31,10 +31,10 @@ end
 function clear()
 	pulse("back")
 end
-function set_dummy()
+function set_dummy_filtering()
 	pulse("right")
 end
-function unset_dummy()
+function unset_dummy_filtering()
 	pulse("left")
 end
 
@@ -50,8 +50,8 @@ functions = {
 	disable_crafting = disable_crafting,
 	enable_crafting = enable_crafting,
 	clear = clear,
-	set_dummy = set_dummy,
-	unset_dummy = unset_dummy,
+	set_dummy_filtering = set_dummy_filtering,
+	unset_dummy_filtering = unset_dummy_filtering,
 }
 
 main()
