@@ -33,7 +33,7 @@ end
 
 function pulse(side)
 	rs.setOutput(side, true)
-	sleep(0.05)
+	sleep(0.05) -- Crucial
 	rs.setOutput(side, false)
 end
 

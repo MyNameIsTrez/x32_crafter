@@ -30,7 +30,7 @@ end
 
 function pulse_color(side, color)
 	rs.setBundledOutput(side, color)
-	sleep(0.05)
+	sleep(0.05) -- Crucial
 	rs.setBundledOutput(side, 0)
 end
 

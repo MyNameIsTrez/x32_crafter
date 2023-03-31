@@ -1,6 +1,6 @@
 -- CONFIGURATION ---------------------------------------------------------------
 
-local modem_side = "back"
+local modem_side = "top"
 
 local id_master = 76
 
@@ -27,7 +27,7 @@ end
 
 function pulse(side)
 	rs.setOutput(side, true)
-	sleep(0.05)
+	sleep(0.05) -- Crucial
 	rs.setOutput(side, false)
 end
 

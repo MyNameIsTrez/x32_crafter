@@ -22,10 +22,10 @@ function main()
 end
 
 function disable_crafting()
-	rs.setOutput("front", true)
+	rs.setOutput("front", false)
 end
 function enable_crafting()
-	rs.setOutput("front", false)
+	rs.setOutput("front", true)
 end
 
 function clear()
@@ -40,7 +40,7 @@ end
 
 function pulse(side)
 	rs.setOutput(side, true)
-	sleep(0.05)
+	sleep(0.05) -- Crucial
 	rs.setOutput(side, false)
 end
 
